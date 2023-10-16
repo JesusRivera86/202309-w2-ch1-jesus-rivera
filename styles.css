@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  padding: 50px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -11,6 +14,7 @@ header {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  width: 100vw;
 }
 
 .header-text {
@@ -29,9 +33,41 @@ p {
 li {
   list-style: none;
 }
-
+.stars ul {
+  display: flex;
+  flex-direction: column;
+}
 .stars {
   width: 40%;
+}
+.stars ul li {
+  background-color: rgb(243, 242, 244);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.firts-stars {
+  right: 30px;
+}
+.person-container {
+  color: white;
+  width: 250px;
+  height: 200px;
+  padding: 5px;
+  background-color: rgb(90, 10, 106);
+}
+.user-info {
+  display: flex;
+  margin: 5px;
+}
+.user-name {
+  display: flex;
+  flex-direction: column;
+  margin: 0, 0, 0, 10px;
+  color: white;
+}
+.user-name span {
+  color: rgb(226, 43, 205);
 }
 
 .colton,
@@ -50,4 +86,9 @@ li {
 
 .anne img {
   border-radius: 100px;
+}
+.main-container {
+  width: 100vw;
+  display: flex;
+  gap: 20px;
 }
